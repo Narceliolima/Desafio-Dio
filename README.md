@@ -10,7 +10,7 @@ Aqui contém as anotações, resumos? e códigos sobre o estudo de Git (SIM!) e 
 
 [Documentação Git](https://git-scm.com/doc)  
 [Criação de README.md](https://readme.so/)  
-[Interface de desenvolvimento no Github? Bó testar](https://github.dev/)   
+[Web IDE no Github? Bó testar](https://github.dev/)   
 [Markdown Guia](https://www.markdownguide.org/basic-syntax/)
 
 
