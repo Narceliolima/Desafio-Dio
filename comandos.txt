@@ -1,0 +1,87 @@
+\Configurar o git em geral
+
+git config
+
+- tags --global --local --list --show-origin
+* obs: user.name, user.email, init e core tudo presente no arquivo
+.gitconfig
+
+
+\Inicializa o repo git
+
+git init
+
+\Clona repositório
+
+git clone (url) (nome_pasta[opcional])
+
+- tags: --branch (nome da branch), --single-branch (só pra tal branch)
+
+\Verifica status do branch
+
+git status
+
+* obs: é só pra saber se ainda tem algo pra upar
+
+\Verifica log (commits e branchs)
+
+git log
+
+\Restaura arquivos alterados/apagados
+
+git restore (nome do arquivo)
+
+\Altera o comentário que foi colocado no comit?
+
+git commit --amend -m "(mensagem)"
+
+* obs: Sem o -m ele abre um editor
+
+\Restaura para um comit anterior
+
+git reset (id do comit)
+
+- tags: --soft, --mixed, --hard (Sem argumento = mixed)
+* obs: --soft = só altera, sem deletar do branch
+       --mixed = só altera e deleta do branch
+       --hard = remove tudo, até do pc.
+Cuidado com o hard reset...
+Se passar o nome do arquivo ele só altera/deleta o arquivo do branch (sem mecher no salvo no pc obviu).
+
+\Log de comits?
+
+git reflog
+
+\Remove arquivo igual o reset
+
+git restore --staged (path com o nome do arquivo)
+
+* obs: o mesmo do reset, acho que é mais seguro.
+
+\Adiciona uma branch
+
+git checkout -b (nome da branch)
+
+- tags: sem o -b parece que só troca
+
+\Funde 2 branchs
+
+git merge (nome da branch)
+
+\Verifica branch que está conectado
+
+git branch
+
+- tags: -v verifica até o commit. -d deleta a branch
+
+\Cria um novo comit baseado em um comit anterior "desfazendo" as alterações feitas
+
+git stash
+
+- tags: list (lista o que foi "pausado"), pop (ele despausa descartando as alterações feitas antes do pause), apply (despausa porém aplica as alterações feitas antes do pause)
+
+*obs: Por exemplo, pego um item num bau e marco um checkpoint, posso seguir adiante sem esse item e lá na frente acionar o checkpoint, podendo escolher entre continuar com o item ou descarta-lo.
+
+
+
+
