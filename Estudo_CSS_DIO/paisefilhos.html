@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de combinador filho</title>
+    <style>
+        div > p{ /*Combinador filho Pai > Filho*/
+            background: lightslategrey;
+        }
+        .fundo-vermelho > p{
+            background: lightcoral;
+        }
+        .fundo-amarelo > p{
+            background: gold;
+        }
+        body > p{
+            background: brown;
+        }
+
+        p + p{ /*Irmão adjacente (do lado na mesma linha) (se div + p nesse caso por exemplo o proximo irmão é um p*/
+            color: blueviolet;
+        }
+
+        .fundo-verde p ~ p{ /*Pode ser pra cima ou pra baixo, tanto faz só tem que tá no mesmo identamento*/
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="fundo-vermelho">
+        <p>Paragrafo 1 dentro da div</p>
+        <p>Paragrafo 2 dentro da div</p>
+        <span>
+            <p>Paragrafo 3 dentro da div, dentro do span</p>
+        </span>
+    </div>
+
+    <div class="fundo-amarelo">
+        <p>Paragrafo 4 dentro da div</p>
+        <p>Paragrafo 5 dentro da div</p>
+        <span>
+            <p>Paragrafo 6 dentro da div, dentro do span</p>
+        </span>
+    </div>
+
+    <div class="fundo-verde">
+        <p>Paragrafo 7 dentro da div</p>
+        <p>Paragrafo 8 dentro da div</p>
+        <span>
+            <p>Paragrafo 9 dentro da div, dentro do span</p>
+        </span>
+    </div>
+    
+    <p>Paragrafo 10, fora da div</p>
+    <p>Paragrafo 11, fora da div</p>
+
+    <br><br>
+    <a href="index.html">Inicio</a>
+</body>
+</html>

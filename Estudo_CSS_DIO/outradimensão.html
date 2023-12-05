@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensionamento</title>
+    <style>
+        h1{
+            background: red;
+            width: auto; /*Padrão (pre navegador)*/
+            height: initial; /*Puxa o valor padrão (mesma coisa?)*/
+        }
+
+        div{
+            height: 300px;
+            width: 300px;
+        }
+
+        #div1{
+            background: lightgreen;
+            width: 300px;
+            height: 300px;
+        }
+        #div2{
+            background: lightcoral;
+            width: 200px;
+            height: 200px;
+        }
+        #div3{
+            background: lightseagreen;
+            height: inherit;
+        }
+
+        button{
+            max-width: 200px;
+            max-height: 200px;
+            min-width: 100px;
+            min-height: 100px;
+        }
+
+        #elemento1{
+            background: purple;
+            margin: 50px 20px 30px 40px; /*Sentido horário, 1 valor todos os lados, primeiro cima segundo baixo, 3 cima, lados e baixo, 4 cima, direita, baixo, esquerda*/
+            /*O auto aqui só centraliza a horizontal*/
+            padding: 50px; /*Ele vai aumentar o tamanho do quadrado a fim de comportar o que tem nele*/
+            padding-top: 20px; /*Quase a mesma coisa do margin*/
+            box-sizing: border-box; /*Pra reajustar e o quadrado não ficar muito grande*/
+        }
+        #elemento2{
+            background: green;
+            margin-top: auto;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Teste de Dimensionamento CSS</h1>
+
+    <div id="div1">
+        Pai
+        <div id="div2">
+        Filho
+           <div id="div3">
+            Neto
+            </div>
+        </div>
+    </div>
+
+    <button>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id labore vitae laudantium sunt, ratione molestiae quas est sequi quaerat mollitia nisi minima porro harum consectetur blanditiis architecto necessitatibus distinctio hic. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, corrupti impedit repudiandae, dolore nam similique sed saepe ducimus magnam sequi omnis aspernatur expedita necessitatibus debitis eligendi facilis consequatur voluptatem enim.</button>
+
+    <div>
+        <div id="elemento1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, adipisci. Doloribus atque eligendi voluptate nesciunt saepe laudantium corrupti possimus, nostrum, quidem quos omnis nam! Reprehenderit recusandae praesentium enim vitae dolore!</div>
+        <div id="elemento2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, adipisci. Doloribus atque eligendi voluptate nesciunt saepe laudantium corrupti possimus, nostrum, quidem quos omnis nam! Reprehenderit recusandae praesentium enim vitae dolore!</div>
+    </div>
+
+    <br><br>
+    <a href="index.html">Inicio</a>
+</body>
+</html>

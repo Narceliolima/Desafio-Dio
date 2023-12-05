@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        /*Para ficar claro que é possivel comentar...
+        * 1 - Seletores por TAG
+        * 2 - Seletores por ID
+        * 3 - Seletores Por Classe
+        * 4 - Seletor Universal
+        * 5 - Seletor de Atributo
+        */
+        div{ /*Seletor de Tag*/
+            background: pink;
+            color: blueviolet;
+        }
+        li{
+            background: darkblue;
+        }
+        h1{
+            color: brown;
+        }
+        h2{
+            color: violet;
+            background: black;
+        }
+
+        #voa{ /*Seletor de ID*/
+            background: purple;
+        }
+        #umdoistres{
+            background: goldenrod;
+        }
+
+        .seletor{ /*Seletor de Classe*/
+            background: gold;
+        }
+        .paladin{
+            text-transform: uppercase;
+        }
+
+        *{ /*Seletor Universal (Olha o *)*/ 
+            font-weight: bold;
+        }
+
+        [title]{ /*Seletor de atributo (lá vem bomba)*/
+            background: green;
+        }
+        [title='fisico forca']{ /*Seletor passando um atributo por parametro*/
+            color: purple;
+        }
+        [title~=atributo]{ /*Seletor passando uma palavra que contem dentro de um atributo (só ela ou separado por espaço)*/
+            color: white;
+        }
+        [title|=teórico]{ /*Seletor passando uma palavra que contem dentro de um atributo (Ela seguida por hifen e antes de outra palavra)*/
+            color: pink;
+        }
+        [title^='atributo lógico']{ /*Prefixos*/
+            color: brown;
+        }
+        [title$='fé']{ /*Sufixos*/
+            color: gold;
+        }
+        [title*='inteligencia']{ /*Qualquer lugar contendo a palavra*/
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exemplos de Seletores</h1>
+
+    <h2 id="voa">Voa lá</h2>
+    <h2 id="issoai">É isso ai</h2>
+
+    <div>
+        <ul>
+            <li><b>Seletor de TAG</b></li><br>
+            <li id="umdoistres"><b>Seletor de ID</b></li><br>
+            <li class="seletor"><b>Seletor de Classe</b></li><br>
+            <li><b>Seletores Universais</b></li><br>
+            <li><b>Seletor de Atributo</b></li><br>
+        </ul>
+    </div>
+
+    <p class="seletor paladin">Paladin</p>
+    <p class="paladin">Dark Paladin</p>
+
+    <label title="fisico forca">Força</label><br>
+    <label title="atributo fisico agilidade">Agilidade</label><br>
+    <label title="atributo inteligencia">Inteligencia</label><br>
+    <label title="atributo lógico carisma">Carisma</label><br>
+    <label title="atributo teórico fé">Fé</label><br>
+    <label title="teórico-Sorte">Sorte</label><br><br>
+
+    <a href="index.html">Inicio</a>
+</body>
+</html>
