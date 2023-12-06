@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            border: 5px solid black;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        #fill{ /*Preenche o objeto que ele pertence, deformando a imagem*/
+            object-fit: fill;
+        }
+        #contain{ /*Reduz o tamanho da imagem para caber todo porém no limite da bordaXImagem*/
+            object-fit: contain;
+        }
+        #cover{ /*Aumenta o tamanho da imagem a fim de caber todo, porém no limite da ImagemXborda vai cortar a imagem parcialmente*/
+            object-fit: cover;
+        }
+        #none{ /*A imagem no tamanho original dentro das bordas, vai cortar ela bastante dependendo da qualidade dela.*/
+            object-fit: none;
+        }
+        #scale-down{ /*Seleciona o tamanho máximo para que caiba dentro das bordas, geralmente é entre o "Contain" e "None"*/
+            object-fit: scale-down;
+        }
+
+        #object-position{ /*"Ancora" a imagem em um determinado ponto com relação as bordas (procento,pixels,ou por extenso "center, top, right, start, end"*/
+            object-fit: cover;
+            object-position: right 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <h1>Imagens</h1>
+
+    <code>object-fit: fill ;</code> (Padrão)
+    <div>
+        <img src="https://raw.githubusercontent.com/Narceliolima/Projeto-Jogo-da-Trilha/master/Resources/Regred.png" alt="" id="fill">
+    </div>
+    <br>
+
+    <code>object-fit: contain ;</code>
+    <div>
+        <img src="https://raw.githubusercontent.com/Narceliolima/Projeto-Jogo-da-Trilha/master/Resources/Regred.png" alt="" id="contain">
+    </div>
+    <br>
+
+    <code>object-fit: cover ;</code>
+    <div>
+        <img src="https://raw.githubusercontent.com/Narceliolima/Projeto-Jogo-da-Trilha/master/Resources/Regred.png" alt="" id="cover">
+    </div>
+    <br>
+
+    <code>object-fit: none ;</code>
+    <div>
+        <img src="https://raw.githubusercontent.com/Narceliolima/Projeto-Jogo-da-Trilha/master/Resources/Regred.png" alt="" id="none">
+    </div>
+    <br>
+
+    <code>object-fit: scale-down ;</code>
+    <div>
+        <img src="https://raw.githubusercontent.com/Narceliolima/Projeto-Jogo-da-Trilha/master/Resources/Regred.png" alt="" id="scale-down">
+    </div>
+    <br>
+
+    <code>object-position: ??? ;</code>
+    <div>
+        <img src="https://raw.githubusercontent.com/Narceliolima/Projeto-Jogo-da-Trilha/master/Resources/Regred.png" alt="" id="object-position">
+    </div>
+
+    <br><br>
+    <a href="index.html">Inicio</a>
+</body>
+</html>

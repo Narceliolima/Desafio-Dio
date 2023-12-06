@@ -1,0 +1,56 @@
+
+div{
+    margin-bottom: 30px;
+    width: 300px;
+    height: 300px;
+    border: 5px solid blue;
+    background-image: url('../imagens/zerox6stand.gif'),url('../imagens/IMG0194A.jpg');
+}
+
+.exemplo{
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    background-image: url('../imagens/zerox6stand.gif'), url('../imagens/437.png');
+    background-size: 50px 50px;
+    /*url(parametro)*/
+    /*linear-gradient(cor1,cor2,cor3...)*/
+    /*radial-gradient(cor1,cor2,cor3...)*/
+    /*repeating-linear-gradient(to left (onde começa),cor1 0px 10px,cor2 10px 20px...)*/
+}
+
+
+#cover{ /*A imagem preenche toda a borda, porém pode ser cortada ou aumentada perdendo sua qualidade*/
+    background-size: cover;
+}
+#contain{ /*A imagem vai caber na borda, porém vai ter parte "vazia" é o mesmo do contain das imagens*/
+    background-size: contain;
+}
+#valor-tamanho{ /*Define o tamanho na tora, pode por em pixel ou porcentagem*/
+    background-size: 25% 25%;
+}
+#camadas{ /*Define separadamente (através da virgula) o tamanho de cada camada*/
+    background-size: 50% 100%, 100% 100%;
+}
+
+#repeat{ /*repete no tamanho da imagem*/
+    background-repeat: repeat;
+}
+#repeat-x{
+    background-size: 25% 25%;
+    background-repeat: repeat-x;
+}
+#repeat-y{
+    background-size: 25% 25%;
+    background-repeat: repeat-y;
+}
+#space{ /*Repete no tamanho da imagem, porém se cortar, preenche com espaços em branco*/
+    background-repeat: space;
+}
+#round{ /*repete sem cortar, porém redimensiona pra caber tudo de borda a borda*/
+    background-repeat: round;
+}
+#no-repeat{ /*não repete*/
+    background-repeat: no-repeat;
+    background-position: center; /*Tomar cuidado que isso é posicionamento de papel do fundo, e tem de objetos (imagens) entre outros*/
+} /*É possivel passar 2 valores, sendo o primeiro no eixo x e o segundo no eixo y (ex: space repeat)*/
