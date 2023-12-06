@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores</title>
+    <style>
+        #pre-definida{
+            color: rebeccapurple;
+        }
+        #current-color{
+            color: gold;
+            border: 2px solid currentColor;
+        }
+        #hex{
+            color: #00FF00;
+        }
+        #hex-transparencia{
+            color: #00FF0080;
+        }
+        #rbg{
+            color: rgb(0, 0, 255);
+        }
+        #rbga{
+            color: rgba(0, 0, 255, 0.3);
+        }
+        #hsl{
+            color: hsl(0, 100%, 50%); /*0 ou 360 é vermelho (circulo), 120 verde, 240 azul/saturação=tons de ciza/luminosidade=0% e preto e 100% é branco*/
+        }
+        #hsla{
+            color: hsla(0, 100%, 50%, 0.4);
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Cores</h1>
+    <h2>Apesar dos exemplos em HTML vamos lá revisar</h2>
+
+    <ul>
+        <li id="pre-definida">Cores Pré definidas</li>
+        <li id="current-color">Paravra-Chave "current-color"</li>
+        <li id="hex">Hexadecimal</li>
+        <li id="hex-transparencia">Hexadecimal com transparencia</li>
+        <li id="rbg">RBG</li>
+        <li id="rbga">RBGA</li>
+        <li id="hsl">HSL</li>
+        <li id="hsla">HSLA</li>
+    </ul>
+
+    <br><br>
+    <a href="index.html">Inicio</a>
+</body>
+</html>
