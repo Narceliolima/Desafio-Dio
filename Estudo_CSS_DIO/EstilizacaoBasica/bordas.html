@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas</title>
+    <style>
+        .Exemplo{
+            background-color: blueviolet;
+            width: 200px;
+            height: 200px;
+            border-style: double solid dotted dashed;
+            border-width: 10px 20px 30px 40px;
+            border-color: aquamarine red blue green;
+            border-radius: 80px/20px; /*valor normal ex: 100px, valor para atenuação de borda ex: 20px/80px, valor em %*/
+        }
+        .Exemplo2{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            border: 20px solid;
+            margin: 50px auto;
+        }
+        #borda1{
+            border-image-source: url('imagens/coracao.png');
+            border-image-repeat: round; /*round, stretch, repeat, space*/ 
+            border-image-slice: 95;
+            /*border-image-width: 5px 10px 15px 20px; /*Também aceita o valor "auto" e %*/
+            border-image-outset: 1 2 3 4; /*pixels ou inteiros*/
+        }
+        #borda2{
+            border-image-source: linear-gradient(red, orange);
+            border-image-slice: 10;
+        }
+
+        #exemplo-resumido{
+            border-image: url('imagens/coracao.png') 95/10px/2 round;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Bordas</h1>
+
+    <p>Propriedades das bordas</p>
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+    
+    <h2>Exemplo</h2>
+    <div class="Exemplo"></div>
+
+    <h1>Bordas com imagem</h1>
+    <h2>Exemplo</h2>
+    <div class="Exemplo2" id="borda1"></div><br>
+    <div class="Exemplo2" id="borda2"></div><br>
+    <div class="Exemplo2" id="exemplo-resumido"></div><br>
+
+    <a target="_blank" href="https://www.figma.com/">Figma</a>
+
+    <br><br>
+    <a href="index.html">Inicio</a>
+</body>
+</html>

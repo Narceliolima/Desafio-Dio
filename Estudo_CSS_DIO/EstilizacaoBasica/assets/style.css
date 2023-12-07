@@ -88,3 +88,40 @@ div{
 #content-box{ /*A imagem cobre até a margem do padding*/
     background-origin: content-box;
 }
+
+.clip{
+    width: 300px;
+    height: 300px;
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    border: 15px solid blue;
+    background-color: blueviolet;
+    padding: 30px;
+}
+
+#text{ /*Background-clip tem efeitos similares ao origin, porém ligado a areas de pintura*/
+    -webkit-background-clip: text;
+    color: transparent; /*Tem que ser transparente pois a pintura ficará "atraz" do texto*/
+    background-clip: text;
+}
+
+.blend-mode{
+    width: 300px;
+    height: 300px;
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    border: 15px solid blue;
+    background-color: blueviolet;
+    padding: 30px;
+    background-blend-mode: difference;
+}
+
+#definitivo{
+    padding: 15px;
+    background: url('../imagens/437.png') no-repeat
+    center/100% 100%
+    scroll
+    content-box;
+}
