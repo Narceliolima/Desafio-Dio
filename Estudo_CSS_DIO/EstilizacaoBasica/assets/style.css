@@ -54,3 +54,37 @@ div{
     background-repeat: no-repeat;
     background-position: center; /*Tomar cuidado que isso é posicionamento de papel do fundo, e tem de objetos (imagens) entre outros*/
 } /*É possivel passar 2 valores, sendo o primeiro no eixo x e o segundo no eixo y (ex: space repeat)*/
+
+.attachment{
+    background-image: url('../imagens/IMG0194A.jpg');
+    color: red;
+    overflow: auto;
+}
+
+#fixed{ /*Ela vai ficar fixa, dando a impressão que tá olhando a imagem por uma janela*/
+    background-attachment: fixed;
+}
+#scroll{ /*A imagem não vai rolar junto, dando a impressão que só vai fixar fixa no fundo*/
+    background-attachment: scroll;
+}
+#local{ /*A imagem vai ser replicada e rolar junto de acordo com o tamanho do que a compoem*/
+    background-attachment: local;
+}
+
+.origin{
+    background-image: url('../imagens/IMG0200A.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 15px dashed blue;
+    padding: 30px;
+}
+
+#padding-box{ /*A imagem cobre até o padding ficando na margem da borda (padrão)*/
+    background-origin: padding-box;
+}
+#border-box{ /*A imagem cobre até a borda, ficando a margem do limite da div*/
+    background-origin: border-box;
+}
+#content-box{ /*A imagem cobre até a margem do padding*/
+    background-origin: content-box;
+}
