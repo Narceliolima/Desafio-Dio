@@ -1,0 +1,36 @@
+@import url("global.css");
+
+/*
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Black.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Thin.ttf");
+    font-weight: lighter;
+}
+*/
+
+h1{
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+p{
+    font-family: Roboto;
+    font-weight: normal;
+}
+
+li{
+    font-family: Roboto;
+    font-weight: lighter;
+}
