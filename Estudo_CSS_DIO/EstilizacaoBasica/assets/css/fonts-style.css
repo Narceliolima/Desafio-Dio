@@ -28,9 +28,49 @@ h1{
 p{
     font-family: Roboto;
     font-weight: normal;
+    line-height: 1.5; /*Numero,Porcentagem, pixels, olha no ctrl+space*/
 }
 
 li{
     font-family: Roboto;
     font-weight: lighter;
+    font-style: italic;
+}
+
+#xx-small{
+    font-size: xx-small;
+}
+#x-small{
+    font-size: x-small;
+}
+#small{
+    font-size: small;
+}
+#medium{
+    font-size: medium;
+}
+#large{
+    font-size: large;
+}
+#x-large{
+    font-size: x-large;
+}
+#xx-large{
+    font-size: xx-large;
+}
+
+div{
+    font-size: 20px;
+}
+div p{
+    font-size: smaller;
+    font-weight: bolder;
+}
+
+#small-caps{
+    font-variant: small-caps;
+}
+
+#font-definitivo{
+    font: bold small-caps italic 15px/3 "Arial", Roboto;
 }
