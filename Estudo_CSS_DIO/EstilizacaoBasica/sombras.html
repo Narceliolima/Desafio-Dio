@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 10px solid pink;
+            background-color: blueviolet;
+            margin: 20px auto;
+
+            box-shadow: inset 20px 20px 5px palevioletred, 30px 30px 7px rebeccapurple;
+        }
+
+        img{
+            width: 500px;
+            margin: 50px 20%;
+            filter: drop-shadow(10px 10px 5px violet);
+            box-shadow: 20px 20px 10px black;
+        }
+
+        h2{
+            color: blue;
+            font-size: 40px;
+            text-align: center;
+            text-shadow: 5px 5px 2px aqua; /*dá pra usar o drop-shadow também*/
+        }
+
+        h3{
+            text-align: center;
+        }
+        #opacidade{
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Sombra das Imagens</h1>
+
+    <div></div>
+
+    <img src="assets/imagens/eito_rebolation.gif" alt="">
+
+    <h2>Ultimos testes de sombras só que agora em textos</h2>
+
+    <h3>Opacidade</h3>
+    <div id="opacidade"></div>
+
+    <br><br>
+    <a href="index.html">Inicio</a>
+</body>
+</html>

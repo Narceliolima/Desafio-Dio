@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textos</title>
+    <style>
+        p{
+            text-transform: uppercase;
+        }
+
+        #alinhamento{
+            width: 50%;
+            text-transform: none;
+            border: 2px solid blue;
+            text-align: right;
+        }
+
+        #decorator{
+            text-transform: none;
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: red;
+            text-decoration-thickness: 3px;
+            /*text-decoration: underline solid blue 5px; */
+            text-indent: -50px;
+        }
+
+        #letter{
+            letter-spacing: 10px;
+        }
+        #word{
+            word-spacing: 20px;
+        }
+
+        .spacesexemplo{
+            width: 200px;
+            background-color: violet;
+        }
+
+        span{
+            background-color: blueviolet;
+        }
+
+        /*white-space: normal > qualquer espaço vira 1 e as quebras de linha é automático*/
+        #nowrap{
+            white-space: nowrap; /*qualquer espaço vira 1 e não possui mais quebra de linha, fica tudo em uma só*/
+        }
+        #pre{
+            white-space: pre; /*O texto todo original do HTML*/
+        }
+        #pre-line{
+            white-space: pre-line; /*qualquer espaço vira 1, e quebra automático + as originais do texto*/
+        }
+        #pre-wrap{
+            white-space: pre-wrap; /*mantem os espaço, e quebra a linha automático + as originais*/
+        }
+        #break-spaces{
+            white-space: break-spaces; /*mantem os espaços, porém quebra os espaços automático + original*/
+        }
+
+        #breaktheword{
+            width: 100px;
+            background-color: violet;
+            word-wrap: break-word;
+            writing-mode: vertical-lr; /*Modo de escrita*/
+        }
+        #breaktheword2{
+            width: 100px;
+            background-color: violet;
+            word-break: break-all;
+            writing-mode: vertical-rl;
+        }/* Resumindo é quase a mesma coisa só que o word-break vai forçar a palavra a caber dentro do definido, e ainda tem a função para não quebrar as palavras fazendo a ultrapassar o limite*/
+
+        #overflow{
+            width: 215px;
+            color: black;
+            background-color: burlywood;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Textos</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut praesentium ipsam, quisquam voluptas temporibus nesciunt modi. Ea autem ipsam dolores veritatis. Ipsam, dolorem. Reprehenderit earum temporibus, blanditiis dicta a obcaecati.</p>
+    
+    <p id="alinhamento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aperiam quos delectus error minus nam at animi numquam, similique iusto cum in alias ex libero assumenda non, doloremque velit odit.</p>
+
+    <p id="decorator">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas magnam unde voluptatibus vitae atque error aut, dolore autem, dolorem temporibus iusto. Consectetur velit asperiores eveniet sequi, odio soluta ad?</p>
+
+    <p id="letter">Adicionando espaçamento entre letras como podemos ver no exemplo.</p><br>
+    <p id="word">Adicionando espaçamento entre palavras como podemos ver no exemplo.</p><br>
+
+    <h1>Espaços em branco</h1>
+    <p id="normal" class="spacesexemplo">
+        <span>
+            Lorem ipsum                       dolor sit, 
+        amet consectetur adipisicing                                                  elit. Esse, quod. Hic 
+        perferendis deleniti, officiis,
+
+         consequuntur quasi vitae, earum 
+
+         libero quo             commodi cupiditate molestiae                  provident culpa. 
+         Provident cum aliquid hic deserunt.
+        </span>
+    </p>
+
+    <p id="nowrap" class="spacesexemplo">
+        <span>
+            Lorem ipsum                       dolor sit, 
+        amet consectetur adipisicing                                                  elit. Esse, quod. Hic 
+        perferendis deleniti, officiis,
+
+         consequuntur quasi vitae, earum 
+
+         libero quo             commodi cupiditate molestiae                  provident culpa. 
+         Provident cum aliquid hic deserunt.
+        </span>
+    </p>
+    
+    <p id="pre" class="spacesexemplo">
+        <span>
+            Lorem ipsum                       dolor sit, 
+        amet consectetur adipisicing                                                  elit. Esse, quod. Hic 
+        perferendis deleniti, officiis,
+
+         consequuntur quasi vitae, earum 
+
+         libero quo             commodi cupiditate molestiae                  provident culpa. 
+         Provident cum aliquid hic deserunt.
+        </span>
+    </p>
+
+    <p id="pre-line" class="spacesexemplo">
+        <span>
+            Lorem ipsum                       dolor sit, 
+        amet consectetur adipisicing                                                  elit. Esse, quod. Hic 
+        perferendis deleniti, officiis,
+
+         consequuntur quasi vitae, earum 
+
+         libero quo             commodi cupiditate molestiae                  provident culpa. 
+         Provident cum aliquid hic deserunt.
+        </span>
+    </p>
+
+    <p id="pre-wrap" class="spacesexemplo">
+        <span>
+            Lorem ipsum                       dolor sit, 
+        amet consectetur adipisicing                                                  elit. Esse, quod. Hic 
+        perferendis deleniti, officiis,
+
+         consequuntur quasi vitae, earum 
+
+         libero quo             commodi cupiditate molestiae                  provident culpa. 
+         Provident cum aliquid hic deserunt.
+        </span>
+    </p>
+
+    <p id="break-spaces" class="spacesexemplo">
+        <span>
+            Lorem ipsum                       dolor sit, 
+        amet consectetur adipisicing                                                  elit. Esse, quod. Hic 
+        perferendis deleniti, officiis,
+
+         consequuntur quasi vitae, earum 
+
+         libero quo             commodi cupiditate molestiae                  provident culpa. 
+         Provident cum aliquid hic deserunt.
+        </span>
+    </p>
+
+    <p id="breaktheword">Trapézio Paralelepipedo Triangulo</p><br>
+    <p id="breaktheword2">Trapézio Paralelepipedo Triangulo</p>
+
+    <p id="overflow">A vida é um pé de mangá, um dia cê manga e no outro dia cê é mangado.</p>
+    
+    <br><br>
+    <a href="index.html">Inicio</a>
+</body>
+</html>
