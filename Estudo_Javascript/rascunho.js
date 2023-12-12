@@ -1,3 +1,18 @@
+/*Objeto Literal gallardo*/
+const gallardo = {
+
+    modelo: 'lamborghini',
+    qntRodas: 4,
+    qntPortas: 2,
+
+    darPartida: function (){
+        console.log(this.modelo+" Está dando partida.");
+    },
+
+    acelerar: function (){
+        console.log(this.modelo+" Está acelerando...");
+    }
+};
 
 /*Objeto Carro*/
 class carro {
@@ -24,7 +39,7 @@ class carro {
 //main
 (function (){
 
-    const miata = new carro('Miata', 4, 2);
+    /*const miata = new carro('Miata', 4, 2);
     const tt = new carro('TT', 4, 4);
     const f1 = new carro('F1', 4, 2);
 
@@ -38,7 +53,23 @@ class carro {
     console.log(tt['qntPassageiros']); //acesso dinâmico.
     console.log(miata['qntPassageiros']+" "+miata['qntPortas']);
     console.log(tt);
-    console.log(miata);
+    console.log(miata);*/
+
+    const lista = [];
+
+    lista.push(3);
+    lista.push(1);
+    lista.push(10);
+
+    console.log(lista);
+
+    lista.pop();
+
+    console.log(lista);
+
+    lista.push(24);
+ 
+    console.log(lista);
 
     return 0;
 })();
