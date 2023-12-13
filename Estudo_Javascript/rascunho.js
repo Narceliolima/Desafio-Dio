@@ -55,7 +55,7 @@ class carro {
     console.log(tt);
     console.log(miata);*/
 
-    const lista = [];
+    /*const lista = [];
 
     lista.push(3);
     lista.push(1);
@@ -69,7 +69,9 @@ class carro {
 
     lista.push(24);
  
-    console.log(lista);
+    console.log(lista);*/
+
+    
 
     return 0;
 })();
