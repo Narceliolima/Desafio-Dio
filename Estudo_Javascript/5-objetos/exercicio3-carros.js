@@ -37,5 +37,9 @@ class Carro {
     miata.valorPercurso(distancia, precoCombustivel);
     tt.valorPercurso(distancia, precoCombustivel);
 
+    const { marca } = tt;
+
+    console.log(marca);
+
     return 0;
 })();

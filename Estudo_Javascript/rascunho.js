@@ -1,3 +1,6 @@
+const aux = require('./rascunhoAux'); //Importando funções de um arquivo externo dentro de uma variavel/classe
+const {print, gets} = require('./rascunhoAux'); //Importando dentro de um "literal" como funções
+
 /*Objeto Literal gallardo*/
 const gallardo = {
 
@@ -71,7 +74,8 @@ class carro {
  
     console.log(lista);*/
 
-    
+    console.log(aux.gets());
+    aux.print('printa alguma coisa');
 
     return 0;
 })();
