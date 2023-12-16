@@ -1,5 +1,5 @@
 const aux = require('./rascunhoAux'); //Importando funções de um arquivo externo dentro de uma variavel/classe
-const {print, gets} = require('./rascunhoAux'); //Importando dentro de um "literal" como funções
+const { print, gets } = require('./rascunhoAux'); //Importando dentro de um "literal" como funções
 
 /*Objeto Literal gallardo*/
 const gallardo = {
@@ -8,12 +8,12 @@ const gallardo = {
     qntRodas: 4,
     qntPortas: 2,
 
-    darPartida: function (){
-        console.log(this.modelo+" Está dando partida.");
+    darPartida: function () {
+        console.log(this.modelo + " Está dando partida.");
     },
 
-    acelerar: function (){
-        console.log(this.modelo+" Está acelerando...");
+    acelerar: function () {
+        console.log(this.modelo + " Está acelerando...");
     }
 };
 
@@ -24,23 +24,23 @@ class carro {
     qntRodas = 0;
     qntPortas = 0;
 
-    constructor (modelo, qntRodas, qntPortas){
+    constructor(modelo, qntRodas, qntPortas) {
         this.modelo = modelo;
         this.qntRodas = qntRodas;
         this.qntPortas = qntPortas;
     }
 
-    darPartida (){
-        console.log(this.modelo+" Está dando partida.");
+    darPartida() {
+        console.log(this.modelo + " Está dando partida.");
     }
 
-    acelerar (){
-        console.log(this.modelo+" Está acelerando...");
+    acelerar() {
+        console.log(this.modelo + " Está acelerando...");
     }
 };
 
 //main
-(function (){
+(function () {
 
     /*const miata = new carro('Miata', 4, 2);
     const tt = new carro('TT', 4, 4);
@@ -74,8 +74,9 @@ class carro {
  
     console.log(lista);*/
 
-    console.log(aux.gets());
-    aux.print('printa alguma coisa');
+    /*console.log(aux.gets());
+    aux.print('printa alguma coisa');*/
+
 
     return 0;
 })();
