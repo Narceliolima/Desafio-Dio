@@ -184,3 +184,5 @@ async function buscarArquivo() { //Passa o nome do arquivo por parametro
 }
 
 buscarArquivo();
+
+console.log(Math.floor(Math.random() * 10));
